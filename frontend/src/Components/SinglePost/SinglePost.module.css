@@ -1,0 +1,34 @@
+.post__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 1rem;
+    /* background-color: red; */
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: var(--primary);
+    margin-inline: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .post {
+        margin-top: 3rem;
+    }
+    .post {
+        width: 700px;
+    }
+}
+    
+

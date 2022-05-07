@@ -1,0 +1,140 @@
+.login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.login__form {
+  padding: 15px;
+  height: 32rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--neomorphism-big);
+  border-radius: 10px;
+}
+
+.login__heading {
+  font-weight: bold;
+}
+
+.login__logo {
+  height: 200px;
+  width: 200px;
+  padding: 0.5rem;
+  margin: 0.7rem 0 1.3rem 0;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  box-shadow: var(--neomorphism-big);
+}
+
+.login__logo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.form__control {
+  width: 100%;
+  margin-block: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.login__icon {
+  position: absolute;
+  margin-left: 0.5rem;
+  color: var(--dark-secondary);
+}
+
+.login__input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 2rem;
+  border-radius: 1rem;
+  padding-left: 2rem;
+  box-shadow: var(--neomorphism-small-inset);
+  background-color: var(--primary);
+
+}
+
+.login__actions {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 6rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Sans", sans-serif;
+}
+.login__button {
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
+  border: none;
+  height: 2rem;
+  width: 7rem;
+  background-color: var(--secondary-button);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: var(--neomorphism-medium);
+}
+
+.login__button:hover {
+  background-color: var(--secondary-button-hover);
+}
+
+.login__forgot {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  color: var(--primary-link);
+  font-size: 0.7rem;
+}
+.login__signup {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+  color: var(--primary-link);
+  font-size: 0.7rem;
+}
+
+.invalid {
+  border-color: var(--error);
+}
+
+@media only screen and (min-width: 300px) {
+  .login__form {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .login__form {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .login__form {
+    width: 23rem;
+  }
+  .form__control {
+    width: 90%;
+  }
+  .login__actions {
+    width: 90%;
+  }
+}

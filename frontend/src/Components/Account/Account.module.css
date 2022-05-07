@@ -1,0 +1,92 @@
+.account {
+    /* margin-top: 2rem; */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    position: relative;
+    /* margin-inline: 1rem; */
+}
+
+.account__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    /* box-shadow: var(--neomorphism-big); */
+    font-family: "Roboto Mono", monospace;
+}
+
+.account__details h1 {
+    letter-spacing: 3px;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.details {
+    padding: 1rem;
+    /* border: 2px solid var(--primary-dark-shadow); */
+    box-shadow: var(--neomorphism-medium);
+}
+
+.logout {
+    background-color: var(--secondary-button);
+    padding: .5rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--neomorphism-medium);
+    transition: all .3s ease;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.logout:hover {
+    background-color: var(--secondary-button-hover);
+}
+
+.posts__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* box-shadow: var(--neomorphism-big); */
+}
+
+.posts__box > h2 {
+    margin-bottom: 2rem;
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 3px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: var(--primary);
+    margin-inline: 1rem;
+}
+.noposts {
+    box-shadow: var(--neomorphism-medium);
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    .posts {
+        width: 700px;
+    }
+}

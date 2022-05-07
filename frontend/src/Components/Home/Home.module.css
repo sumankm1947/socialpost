@@ -1,0 +1,10 @@
+.home {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--primary);
+    margin-inline: 1rem;
+}

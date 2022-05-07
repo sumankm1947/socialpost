@@ -1,0 +1,79 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Roboto+Mono&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-button);
+  border-radius: 100vw;
+}
+
+::placeholder {
+  font-family: "Roboto Mono", monospace;
+}
+
+:root {
+  --primary: #f3f3f3;
+  --primary-dark-shadow: #d1d1d1;
+  --primary-light-shadow: #ffffff;
+
+  --primary-button: #565fbf;
+  --primary-button-hover: #26309c;
+  --primary-button-light-shadow: #ffffff;
+
+  --secondary-button: #a39df7;
+  --secondary-button-hover: #9893fc;
+
+  --primary-success: #00b588;
+  --primary-success-light: #00d894;
+
+  --primary-error: #ff0000;
+  --primary-error-light: #ff9a9a;
+
+  --primary-link: #3c47e1;
+  --primary-link-hover: #26309c;
+
+  --dark-primary: #363636;
+  --dark-secondary: #4c4c4c;
+
+  --invalid: #ff3e3e;
+
+  --neomorphism-big: 10px 10px 15px var(--primary-dark-shadow),
+    -10px -10px 15px var(--primary-light-shadow);
+  --neomorphism-big-inset: inset 10px 10px 15px var(--primary-dark-shadow),
+    inset -10px -10px 15px var(--primary-light-shadow);
+
+  --neomorphism-medium: 5px 5px 10px var(--primary-dark-shadow),
+    -5px -5px 10px var(--primary-light-shadow);
+  --neomorphism-medium-inset: inset 5px 5px 10px var(--primary-dark-shadow),
+    inset -5px -5px 10px var(--primary-light-shadow);
+
+  --neomorphism-small: 2px 2px 5px var(--primary-dark-shadow),
+    -2px -2px 5px var(--primary-light-shadow);
+  --neomorphism-small-inset: inset 2px 2px 5px var(--primary-dark-shadow),
+    inset -2px -2px 5px var(--primary-light-shadow);
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--dark-primary);
+  font-size: 10px;
+}
+
+@media  (min-width: 300px) {
+  body {
+    font-size: 16px;
+  }
+}
