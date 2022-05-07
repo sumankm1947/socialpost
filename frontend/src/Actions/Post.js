@@ -6,7 +6,6 @@ export const getMyPosts = () => async (dispatch) => {
 
     const response = await fetch("/api/user/my-posts", {
       method: "GET",
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -39,7 +38,6 @@ export const getAllPosts = () => async (dispatch) => {
 
     const response = await fetch("/api/post/posts", {
       method: "GET",
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -78,7 +76,6 @@ export const createNewPost = (title, content) => async (dispatch) => {
         title,
         content,
       }),
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -111,7 +108,6 @@ export const deletePost = (postId) => async (dispatch) => {
     });
     const response = await fetch(`/api/post/delete-post/${postId}`, {
       method: "DELETE",
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -149,7 +145,6 @@ export const likeDislikePost = (postId, choice) => async (dispatch) => {
       body: JSON.stringify({
         choice: choice,
       }),
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -183,7 +178,6 @@ export const getUserPosts = (username) => async (dispatch) => {
 
     const response = await fetch(`/api/user/posts/${username}`, {
       method: "GET",
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -216,7 +210,6 @@ export const getPost = (postId) => async (dispatch) => {
 
     const response = await fetch(`/api/post/post/${postId}`, {
       method: "GET",
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -255,7 +248,6 @@ export const addCommentOnPost = (id, comment) => async (dispatch) => {
       body: JSON.stringify({
         comment,
       }),
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -297,7 +289,6 @@ export const deleteCommentOnPost = (id, commentId) => async (dispatch) => {
       body: JSON.stringify({
         commentId,
       }),
-      credentials: "include",
     });
 
     if (!response.ok) {

@@ -7,7 +7,6 @@ export const userSignup = (username, email, password) => async (dispatch) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ username, email, password }),
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -40,7 +39,6 @@ export const userLogin = (username, password) => async (dispatch) => {
         username,
         password,
       }),
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -73,7 +71,6 @@ export const loadMe = () => async (dispatch) => {
 
     const response = await fetch("/api/user/my-account", {
       method: "GET",
-      credentials: "include",
     });
     // console.log(response);
     if (!response.ok) {
@@ -105,7 +102,6 @@ export const loadUser = (username) => async (dispatch) => {
 
     const response = await fetch(`/api/user/user/${username}`, {
       method: "GET",
-      credentials: "include",
     });
     // console.log(response);
     if (!response.ok) {
@@ -137,7 +133,6 @@ export const userLogout = () => async (dispatch) => {
 
     const response = await fetch("/api/user/logout", {
       method: "POST",
-      credentials: "include",
     });
 
     if (!response.ok) {
@@ -167,7 +162,6 @@ export const getAllUsers = () => async (dispatch) => {
 
     const response = await fetch("/api/user/users", {
       method: "GET",
-      credentials: "include",
     });
     // console.log(response);
     if (!response.ok) {
@@ -203,7 +197,6 @@ export const forgotPassword = (email) => async (dispatch) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ email }),
-      credentials: "include",
     });
     if (!response.ok) {
       const error = await response.json();
@@ -238,7 +231,6 @@ export const resetPassword = (token, password) => async (dispatch) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ password }),
-      credentials: "include",
     });
     if (!response.ok) {
       const error = await response.json();
