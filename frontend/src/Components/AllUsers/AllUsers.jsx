@@ -5,6 +5,7 @@ import { AiOutlineUser } from "react-icons/ai";
 
 import classes from "./AllUsers.module.css";
 import { getAllUsers } from "../../Actions/User";
+import Loader from "../UI/Loader/Loader";
 
 const User = ({ username, totalposts, index }) => {
   return (
@@ -28,9 +29,11 @@ const AllUsers = () => {
     dispatch(getAllUsers());
   }, [dispatch]);
 
-  const { users } = useSelector((state) => state.allUsers);
+  const { users, isLoading } = useSelector((state) => state.allUsers);
 
-  return (
+  return isLoading ? (
+    <Loader />
+  ) : (
     <div className={classes.allusers}>
       <h1>All Users</h1>
       <div className={classes.users}>
