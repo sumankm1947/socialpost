@@ -22,9 +22,6 @@ const postRoutes = require("./routes/post");
 const userRoutes = require("./routes/user");
 
 // Using Routes
-app.get("/", (req, res) => {
-  res.send("demo social post app aoi");
-});
 app.use("/api/post", postRoutes);
 app.use("/api/user", userRoutes);
 
