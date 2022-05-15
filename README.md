@@ -14,4 +14,4 @@ This is a social app where people can post posts related to social issues. Peopl
 
 ## Demo
 
-[Click Here](https://demo-social-post.netlify.app/)
+[Click Here](https://demo-social-post.herokuapp.com/)
