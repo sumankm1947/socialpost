@@ -36,5 +36,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://demo-social-post.herokuapp.com"
+  "proxy": "https://localhost:8080"
 }
