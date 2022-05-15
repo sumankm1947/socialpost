@@ -20,6 +20,7 @@
   align-items: flex-start;
   /* padding: 1rem; */
   position: relative;
+  word-break: break-word;
 }
 .content > h2 {
   margin-top: 1rem;
@@ -30,6 +31,7 @@
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   font-size: 0.9em;
+
 }
 .content > a {
   color: var(--primary-link);
