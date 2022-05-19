@@ -1,6 +1,6 @@
 const path = require('path');
 
-require("dotenv").config();
+// require("dotenv").config();
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config({ path: "backend/.env" });
 }
